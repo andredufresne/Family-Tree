@@ -1,0 +1,99 @@
+$font-primary: Roboto, sans-serif;
+$font-secondary: Alex Brush, cursive;
+$primary-color: #3b6978;
+$primary-dark: #204051;
+$primary-light: #84a9ac;
+$secondary-color: adjust-hue($primary-color, 120);
+
+
+body {
+    font: 100% $font-primary;
+    background-color: white;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+h5 {
+    margin: 0;
+    text-align: center;
+}
+
+#title {
+    padding: 3%;
+}
+
+// Take away decoration
+a {
+    color: $primary-dark;
+    text-decoration: none;
+}
+
+//nav button
+.menu {
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+//Navigation 
+nav {
+    padding: 1em;
+    position: relative;
+    display: block;
+    ul {
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        padding: 1em;
+    }
+    a {
+        color: white;
+        &:hover {
+            background-color: $primary-light;
+        }
+    }
+}
+
+.show {display: flex;}
+
+//Navigation content hidden by defualt
+.nav-content {
+    display: none;
+    z-index: 1;
+}
+
+.images img {
+    width: 150px;
+}
+
+hr {
+    border: none;
+    border-top: 8px dotted;
+    color: $secondary-color;
+    opacity: .6;
+    width: 10%;
+}
+
+
+
+// Center content
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individual {
+    
+}
+
